@@ -1,0 +1,143 @@
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #73a5ff, #5478f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.2); 
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  width: 350px;
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+
+.display {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 15px;
+}
+
+.button-increment,
+.button-decrement,
+.button-reset {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 35%; 
+}
+
+.button-increment:hover,
+.button-decrement:hover,
+.button-reset:hover {
+  background-color: #45a049;
+  transform: translateY(-4px);
+}
+
+.button-increment:active,
+.button-decrement:active,
+.button-reset:active {
+  transform: translateY(2px);
+}
+
+.button-decrement {
+  background-color: #ff5722; 
+}
+
+.button-decrement:hover {
+  background-color: #e64a19;
+}
+
+.button-reset {
+  background-color: #03a9f4; 
+}
+
+.button-reset:hover {
+  background-color: #0288d1;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    padding: 30px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .display {
+    font-size: 40px;
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+
+  .button-group {
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  .button-increment,
+  .button-decrement,
+  .button-reset {
+    font-size: 22px;
+    padding: 14px;
+    width: 100%;
+  }
+}
+
+
